@@ -9,7 +9,7 @@ struct DoNilDisturb: BuildToolPlugin {
     ) async throws -> [PackagePlugin.Command] {
         [
             .buildCommand(
-                displayName: "SwiftPMPlugin",
+                displayName: "Build Phase Script - SwiftPMPluginDemo",
                 executable: try context.tool(named: "PluginBinary").path,
                 arguments: []
             )
